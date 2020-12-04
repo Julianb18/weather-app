@@ -9,8 +9,6 @@ body {
 }
 
 .app {
-  /* height: 700px;
-  width: 400px; */
   background-image: url("./assets/cold-bg.jpg");
   background-size: cover;
   background-position: bottom;
@@ -103,4 +101,23 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+@media all and (min-width: 600px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 60, 87);
+  }
+  .app {
+    height: 90vh;
+    width: 600px;
+    border-radius: 15px;
+  }
+  main {
+    min-height: 100%;
+    border-radius: 15px;
+  }
 }
